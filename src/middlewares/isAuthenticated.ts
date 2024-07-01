@@ -19,6 +19,9 @@ export function isAuthenticated(req: Request, res: Response, next: NextFunction)
             token,
             process.env.JWT_SECRET
         ) as Payload;
+
+        req.user_id = sub;
+
         return next();
     } catch(e){
         return res.status(401).end();
