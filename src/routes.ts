@@ -13,6 +13,7 @@ import ListByCategoryController from './controllers/product/ListByCategoryContro
 
 import CreateOrderController from './controllers/order/CreateOrderController';
 import RemoveOrderController from './controllers/order/RemoveOrderController';
+import AddItemController from './controllers/order/AddItemController';
 
 import { isAuthenticated } from './middlewares/isAuthenticated';
 
@@ -40,6 +41,7 @@ router.get('/category/product', isAuthenticated, ListByCategoryController.handle
 // order routes
 router.post('/order', isAuthenticated, CreateOrderController.handle);
 router.delete('/order', isAuthenticated, RemoveOrderController.handle);
+router.post('/order/add', isAuthenticated, AddItemController.handle);
 
 
 export { router };
