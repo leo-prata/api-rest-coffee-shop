@@ -41,7 +41,7 @@ Represents individual items in an order.
 
 # API REST Routes
 
-The information below outlines outlines the available routes in the REST API of the project. The routes are organized by functionality categories: Users, Categories, Products, and Orders. All routes requiring authentication use middleware to verify if the user is authenticated.
+The information below outlines the available routes in the REST API of the project. The routes are organized by functionality categories: Users, Categories, Products, and Orders. All routes requiring authentication use middleware to verify if the user is authenticated.
 
 ## User Routes
 
